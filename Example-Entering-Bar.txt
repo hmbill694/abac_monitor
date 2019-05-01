@@ -1,0 +1,5 @@
+ATTRS = <int, age>; <String, barName>; <String, username>;
+PERMS = <PE>
+PA = <age, 21> : PE - <age, 22> : PE - <age, 23> : PE - <age, 24> : PE - <age, 25> : PE - <age, 26> : PE  
+ENTITIES = <User>;<Bar>;<ENV>
+AA = <Bar> : <barName, "MyBar">; <User> : <age, 22>; <User>: <username, "Carlos">;

@@ -1,0 +1,5 @@
+ATTRS = <Role, role>; <String, fileName>; <String, fileOwnerName>;<AbstractTime, currentTime>
+PERMS = <PW>; <PR>
+PA = <fileName, "grades.txt">; <role, "Student">; <currentTime,WithinOH> : PR - <fileName, "grades.txt">;<role, "Professor">; <currentTime, WithinOH> : PR - <fileName, "grades.txt">; <role,"Professor">; <currentTime, WithinOH> : PW - <fileName, "grades.txt">;<role, "Dean">; <currentTime, WithinOH> : PW - <fileOwnerName, "Carlos"> : PR - <fileOwnerName, "Carlos"> : PW
+ENTITIES = <Josie>;<Carlos>;<Kyle>;<ENV>;<GradesFile>
+AA = <Josie> : <role, "Student">; <Carlos> : <role, "Professor">;<Kyle> : <role, "Dean">; <ENV> : <currentTime, WithinOH>; <GradesFile>: <fileName, "grades.txt">; <GradesFile> : <fileOwnerName, "Carlos">
